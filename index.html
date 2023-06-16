@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="header">
+    <h2 style="margin:5px" >To Do List</h2>
+    <input type="text" id="myInput" placeholder="Title...">
+    <span onclick="addNewTask()" class="addBtn">Add</span>
+  </div>
+  <ul id="myUL">
+    <li class="task-item checked">
+      <input type="checkbox" checked disabled>
+      <label>Break down the areas of weakness</label>
+      <button class="complete-btn">Complete</button>
+      <button class="delete-btn">Delete</button>
+    </li>
+    <li class="task-item">
+      <input type="checkbox">
+      <label>Practise the codes in different languages</label>
+      <button class="complete-btn">Complete</button>
+      <button class="delete-btn">Delete</button>
+    </li>
+    <li class="task-item">
+      <input type="checkbox">
+      <label>Read a book on JavaScript (Get started with JS)</label>
+      <button class="complete-btn">Complete</button>
+      <button class="delete-btn">Delete</button>
+    </li>
+    <li class="task-item checked">
+      <input type="checkbox" checked disabled>
+      <label>Organize my notes</label>
+      <button class="complete-btn">Complete</button>
+      <button class="delete-btn">Delete</button>
+    </li>
+    <li class="task-item">
+      <input type="checkbox">
+      <label>Create JavaScript projects</label>
+      <button class="complete-btn">Complete</button>
+      <button class="delete-btn">Delete</button>
+    </li>
+    <li class="task-item">
+      <input type="checkbox">
+      <label>Take quiz</label>
+      <button class="complete-btn">Complete</button>
+      <button class="delete-btn">Delete</button>
+    </li>
+    <li class="task-item">
+      <input type="checkbox">
+      <label>Comprehend interview questions</label>
+      <button class="complete-btn">Complete</button>
+      <button class="delete-btn">Delete</button>
+    </li>
+  </ul>
+  <button type="button" id="clear-list" onclick="removeAll()">Clear Items</button>
+
+  <script src="index.js"></script>
+</body>
+</html>
